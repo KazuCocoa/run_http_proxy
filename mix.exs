@@ -3,8 +3,8 @@ defmodule RunHttpProxy.Mixfile do
 
   def project do
     [app: :run_http_proxy,
-     version: "0.1.0",
-     elixir: "~> 1.2",
+     version: "0.2.0",
+     elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
@@ -25,7 +25,7 @@ defmodule RunHttpProxy.Mixfile do
 
   defp deps do
     [
-      {:http_proxy, "~> 1.0.3"}
+      {:http_proxy, "~> 1.1"}
     ]
   end
 end
